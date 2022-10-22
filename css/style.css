@@ -2,6 +2,9 @@
    .news-input{
     width: 50%;
    } 
+   .article-img{
+    width: 100%;
+   }
 }
 .card{
     width: 18rem;
