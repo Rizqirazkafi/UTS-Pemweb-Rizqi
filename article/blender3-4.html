@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tools</title>
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
       <div class="container">
@@ -46,26 +47,48 @@
         </div>
       </div>
     </nav>
-    <section id="list">
-      <div class="container pt-5">
-        <div class="card mb-3" ">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://miro.medium.com/max/700/1*MUyy8PyijV6teba92mATrg.png"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
+
+    <section class="article p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="article-title">
+              <h1 class="fs-1">
+                <b>Blender 3.4 to Enable Native Wayland Support for Linux</b>
+              </h1>
+              <hr />
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h3 class="card-title"><b>Vim</b></h3>
-                <p class="card-text "><a href="/article/vim.html" class="text-decoration-none link-dark">Checkout the <b>light weight and fully customizebale</b> text editor / IDE</a></p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
+            <img
+              src="https://news.itsfoss.com/content/images/size/w1200/2022/10/blender-3-4-release.png"
+              class="w-100"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              Wayland is a replacement to the X11 display server that aims to be
+              a simpler and more modern solution. Providing native Wayland
+              support has become necessary, mainly because many distros now come
+              with that kind of support out of the box. With more Wayland
+              support in the works and users switching to a distro with native
+              support, this move was a given.
+            </p>
+            <p>
+              With the daily builds, the libdecor library has made this
+              possible. If you want to test it out, you need to have it
+              installed for Blender to work correctly with native Wayland
+              support. While initial support for Wayland was present in Blender
+              since 2020, it was not ready for prime time. It had a lot of
+              issues, such as no tablet support, no NDOF support, no Hi-DPI
+              support, and similar. Now, it looks like most of those issues are
+              gone.
+            </p>
           </div>
         </div>
       </div>
@@ -106,5 +129,10 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
